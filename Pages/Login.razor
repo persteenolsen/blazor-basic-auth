@@ -65,7 +65,7 @@
         {
             await AuthenticationService.Login(model.Username, model.Password);
             
-              // New code !!
+            // New code !!
             var returnUrl = NavigationManager.GetUriWithQueryParameter("returnUrl", false);        
             if( returnUrl == "returnUrl")
                 NavigationManager.NavigateTo(returnUrl);
