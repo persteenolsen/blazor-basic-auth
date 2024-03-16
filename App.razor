@@ -1,5 +1,9 @@
 @inject NavigationManager NavigationManager
 
+@using BlazorApp.Shared
+@using Microsoft.AspNetCore.Components.Routing
+@using BlazorApp.Helpers
+
 <Router AppAssembly="@typeof(Program).Assembly">
     <Found Context="routeData">
         <AppRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />

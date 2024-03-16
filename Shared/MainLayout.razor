@@ -2,6 +2,9 @@
 @inject IAuthenticationService AuthenticationService
 @inject NavigationManager NavigationManager
 
+@using BlazorApp.Services
+@using Microsoft.AspNetCore.Components.Routing
+
 @if (AuthenticationService.User != null)
 {
     <!-- nav -->

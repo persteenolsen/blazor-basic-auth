@@ -3,6 +3,10 @@
 @inject IAuthenticationService AuthenticationService
 @inject NavigationManager NavigationManager
 
+@using BlazorApp.Services
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+
 <div class="col-md-6 offset-md-3 mt-5">
     
     <b>Last updated: </b>11-03-2024<br /><br />
@@ -60,8 +64,17 @@
         try
         {
             await AuthenticationService.Login(model.Username, model.Password);
-            var returnUrl = NavigationManager.QueryString("returnUrl") ?? "";
-            NavigationManager.NavigateTo(returnUrl);
+            
+              // New code !!
+            var returnUrl = NavigationManager.GetUriWithQueryParameter("returnUrl", false);        
+            if( returnUrl == "returnUrl")
+                NavigationManager.NavigateTo(returnUrl);
+            else
+                NavigationManager.NavigateTo("");
+                
+           // Old Code
+           // var returnUrl = NavigationManager.QueryString("returnUrl") ?? "";
+           // NavigationManager.NavigateTo(returnUrl);
         }
         catch (Exception ex)
         {

@@ -2,6 +2,10 @@
 @attribute [Authorize]
 @inject IUserService UserService
 
+@using BlazorApp.Models
+@using BlazorApp.Services
+@using Microsoft.AspNetCore.Authorization
+
 <div class="card mt-4">
     <h4 class="card-header">You're logged in with Blazor & Basic HTTP Authentication!!</h4>
     <div class="card-body">
