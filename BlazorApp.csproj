@@ -3,12 +3,18 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
-
+       
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-
+    
+    <!-- To avoid errors in import.razor on release build -->
     <RootNameSpace>BlazorApp</RootNameSpace>
+
+    <!--15-09-2025 - Added the two below lines to avoid the release build error -->
+    <!-- Duplicate 'global::System.Runtime.Versioning.TargetFrameworkAttribute' attribute -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>   
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 
   </PropertyGroup>
 
