@@ -1,5 +1,3 @@
-
-
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
@@ -29,4 +27,3 @@
   </ItemGroup>
 
 </Project>
-

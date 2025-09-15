@@ -16,7 +16,7 @@ dotnet new globaljson --sdk-version 6.0.320 --force
 
 # Tech used for creating the Web App
 
-- A Blazor Webassembly Client towards a .NET 6 Web API
+- A Blazor Webassembly Client towards a .NET 8 Web API
 - C#
 - Razor Pages
 - A traditional Webhotel for hosting
