@@ -51,3 +51,13 @@ To solve that issue I have been loading the folders / files needed like in "app.
 Added the below in Blazorapp.csproj
 
 RootNameSpace - BlazorApp - RootNameSpace
+
+Added the two below lines to avoid the release build error:
+
+Duplicate global - System - Runtime - Versioning - TargetFrameworkAttribute - attribute - Error
+
+GenerateAssemblyInfo - false - GenerateAssemblyInfo
+
+GenerateTargetFrameworkAttribute - false - GenerateTargetFrameworkAttribute
+
+
