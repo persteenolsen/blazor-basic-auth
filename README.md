@@ -4,11 +4,11 @@ ASP.NET Core Blazor WebAssembly - Basic HTTP Authentication Example
 
 # Last updated
 
-- 15-09-2025
+- 16-09-2025
 
 # Create a global json
 
-dotnet new globaljson --sdk-version 6.0.320 --force
+dotnet new globaljson --sdk-version 8.0.203 --force
 
 # Functionality of the Web App
 
