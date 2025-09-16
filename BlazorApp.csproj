@@ -21,6 +21,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.2" PrivateAssets="all" />
     
+    <!--16-09-2025 - For some reason there was an error when upgraded to versions 9-->
+    <!--For now using these older versions below as they work with .NET 8 -->
     <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
     <PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
 
