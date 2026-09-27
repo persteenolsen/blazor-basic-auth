@@ -4,7 +4,7 @@ ASP.NET Core Blazor WebAssembly - Basic HTTP Authentication Example
 
 # Last updated
 
-- 25-05-2026
+- 27-09-2026
 
 # Create a global json
 
